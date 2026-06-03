@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "AI Engineering from Scratch",
+    "slug": "ai-engineering-from-scratch",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "aiefs",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0b0b0f"
+    },
+    "assetBundlePatterns": [
+      "assets/content/*.json",
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aiefs.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "We use your data to show you more relevant ads, which keeps the free tier free. You can decline and still use the whole app.",
+        "SKAdNetworkItems": [
+          { "SKAdNetworkIdentifier": "cstr6suwn9.skadnetwork" }
+        ]
+      }
+    },
+    "android": {
+      "package": "com.aiefs.app",
+      "versionCode": 1,
+      "permissions": [
+        "com.google.android.gms.permission.AD_ID",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#0b0b0f"
+      }
+    },
+    "plugins": [
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-3940256099942544~3347511713",
+          "iosAppId": "ca-app-pub-3940256099942544~1458002511",
+          "userTrackingUsageDescription": "We use your data to show you more relevant ads, which keeps the free tier free. You can decline and still use the whole app.",
+          "delayAppMeasurementInit": true
+        }
+      ],
+      "expo-tracking-transparency"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "REPLACE_WITH_YOUR_EAS_PROJECT_ID"
+      },
+      "revenueCatIosKey": "REPLACE_WITH_REVENUECAT_IOS_PUBLIC_SDK_KEY",
+      "revenueCatAndroidKey": "REPLACE_WITH_REVENUECAT_ANDROID_PUBLIC_SDK_KEY",
+      "admobBannerIosUnitId": "",
+      "admobBannerAndroidUnitId": "",
+      "admobInterstitialIosUnitId": "",
+      "admobInterstitialAndroidUnitId": "",
+      "useAdMobTestIds": true
+    }
+  }
+}
